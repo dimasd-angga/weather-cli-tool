@@ -18,7 +18,20 @@ A Python command-line tool to fetch real-time weather data for any city using th
 ### 1. Get API Key
 Sign up for a free API key at [OpenWeatherMap](https://openweathermap.org/api)
 
-### 2. Set Environment Variable
+### 2. Create and Activate a Virtual Environment
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate  # On Windows use `.venv\Scripts\activate`
+```
+
+### 3. Install Dependencies
+
+```bash
+pip install requests
+```
+
+### 4. Set Environment Variable
 
 ```bash
 # Linux/macOS
@@ -29,12 +42,6 @@ set OWM_API_KEY=your_api_key_here
 
 # Windows (PowerShell)
 $env:OWM_API_KEY='your_api_key_here'
-```
-
-### 3. Install Dependencies
-
-```bash
-pip install requests
 ```
 
 ---
